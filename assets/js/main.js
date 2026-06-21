@@ -1,7 +1,7 @@
-```javascript
 /* ==========================================
    SamLee Estates
    main.js
+   Production MVP Version
 ========================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
     initHeroSlider();
     initSmoothScroll();
     initStickyHeader();
+    initFadeAnimations();
+    initFaqs();
+    initCurrentYear();
+    setActiveNavLink();
+    createBackToTopButton();
 
 });
 
@@ -42,6 +47,16 @@ function initHeroSlider() {
 
     if (slides.length <= 1) return;
 
+    slides.forEach((slide, index) => {
+
+        if (index === 0) {
+            slide.classList.add("active");
+        } else {
+            slide.classList.remove("active");
+        }
+
+    });
+
     let current = 0;
 
     setInterval(() => {
@@ -70,7 +85,7 @@ function initSmoothScroll() {
 
     links.forEach(link => {
 
-        link.addEventListener("click", e => {
+        link.addEventListener("click", event => {
 
             const targetId = link.getAttribute("href");
 
@@ -80,7 +95,7 @@ function initSmoothScroll() {
 
             if (!target) return;
 
-            e.preventDefault();
+            event.preventDefault();
 
             target.scrollIntoView({
                 behavior: "smooth",
@@ -94,7 +109,7 @@ function initSmoothScroll() {
 }
 
 /* ==========================================
-   STICKY HEADER SHADOW
+   STICKY HEADER
 ========================================== */
 
 function initStickyHeader() {
@@ -121,30 +136,34 @@ function initStickyHeader() {
 }
 
 /* ==========================================
-   FADE-IN ANIMATION
+   FADE ANIMATIONS
 ========================================== */
 
-const observer = new IntersectionObserver(entries => {
-
-    entries.forEach(entry => {
-
-        if (entry.isIntersecting) {
-
-            entry.target.classList.add("fade-in");
-
-        }
-
-    });
-
-}, {
-    threshold: 0.15
-});
-
-document.addEventListener("DOMContentLoaded", () => {
+function initFadeAnimations() {
 
     const cards = document.querySelectorAll(
-        ".quick-card, .feature-card, .category-card, .resource-card, .property-card, .testimonial-card"
+        ".quick-card, .feature-card, .category-card, .resource-card, .property-card, .testimonial-card, .faq-card, .stat-card"
     );
+
+    if (!cards.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("fade-in");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
 
     cards.forEach(card => {
 
@@ -152,56 +171,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-});
+}
 
 /* ==========================================
-   COUNTER ANIMATION
+   FAQ ACCORDION
 ========================================== */
 
-function animateCounter(element, target) {
+function initFaqs() {
 
-    let current = 0;
+    const questions =
+        document.querySelectorAll(".faq-question");
 
-    const increment = target / 100;
+    if (!questions.length) return;
 
-    const timer = setInterval(() => {
+    questions.forEach(question => {
 
-        current += increment;
+        question.addEventListener("click", () => {
 
-        if (current >= target) {
+            const card =
+                question.closest(".faq-card");
 
-            current = target;
+            if (!card) return;
 
-            clearInterval(timer);
+            card.classList.toggle("open");
 
-        }
+        });
 
-        element.textContent =
-            Math.floor(current);
-
-    }, 20);
+    });
 
 }
 
 /* ==========================================
-   ACTIVE NAV LINK
+   ACTIVE NAVIGATION
 ========================================== */
 
 function setActiveNavLink() {
 
-    const currentPage =
-        window.location.pathname.split("/").pop();
+    const currentPath =
+        window.location.pathname;
 
     const links =
         document.querySelectorAll(".nav a");
 
     links.forEach(link => {
 
-        const href = link.getAttribute("href");
+        const href =
+            link.getAttribute("href");
+
+        if (!href) return;
 
         if (
-            href === currentPage ||
-            (currentPage === "" && href === "index.html")
+            currentPath.endsWith(href)
         ) {
 
             link.classList.add("active-link");
@@ -212,7 +232,25 @@ function setActiveNavLink() {
 
 }
 
-setActiveNavLink();
+/* ==========================================
+   CURRENT YEAR
+========================================== */
+
+function initCurrentYear() {
+
+    const year =
+        new Date().getFullYear();
+
+    const yearElements =
+        document.querySelectorAll(".current-year");
+
+    yearElements.forEach(element => {
+
+        element.textContent = year;
+
+    });
+
+}
 
 /* ==========================================
    BACK TO TOP BUTTON
@@ -225,7 +263,8 @@ function createBackToTopButton() {
 
     button.innerHTML = "↑";
 
-    button.className = "back-to-top";
+    button.className =
+        "back-to-top";
 
     document.body.appendChild(button);
 
@@ -254,60 +293,14 @@ function createBackToTopButton() {
 
 }
 
-createBackToTopButton();
-
-/* ==========================================
-   PRELOAD HERO IMAGES
-========================================== */
-
-function preloadImages() {
-
-    const images = [
-        "assets/images/hero-1.jpg",
-        "assets/images/hero-2.jpg",
-        "assets/images/hero-3.jpg"
-    ];
-
-    images.forEach(src => {
-
-        const img = new Image();
-
-        img.src = src;
-
-    });
-
-}
-
-preloadImages();
-
-/* ==========================================
-   YEAR AUTO UPDATE
-========================================== */
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const yearElements =
-        document.querySelectorAll(".current-year");
-
-    const year =
-        new Date().getFullYear();
-
-    yearElements.forEach(el => {
-
-        el.textContent = year;
-
-    });
-
-});
-
 /* ==========================================
    CONSOLE BRANDING
 ========================================== */
 
 console.log(`
 ╔══════════════════════════════════════╗
-║          SAMLEE ESTATES             ║
-║   Student Accommodation Near UFS    ║
+║          SAMLEE ESTATES              ║
+║   Student Accommodation Near UFS     ║
+║      https://samlee.co.za            ║
 ╚══════════════════════════════════════╝
 `);
-```
