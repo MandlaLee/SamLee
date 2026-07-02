@@ -1,0 +1,6 @@
+# File: robots.txt
+
+User-agent: *
+Allow: /SamLee/
+
+Sitemap: https://mandlalee.github.io/SamLee/sitemap.xml
