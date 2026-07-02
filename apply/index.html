@@ -1,3 +1,4 @@
+```html id="apply-index-clean-html"
 <!-- File: apply/index.html -->
 
 <!DOCTYPE html>
@@ -19,201 +20,10 @@ content="apply for student accommodation, SamLee Estates application, NSFAS acco
 <link rel="icon" href="../assets/images/favicon.ico">
 
 <link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/css/apply.css">
 
 <link rel="canonical"
-href="https://samlee.co.za/apply/">
-
-<style>
-
-.application-layout {
-    display: grid;
-    grid-template-columns: 1.3fr .7fr;
-    gap: 34px;
-    align-items: start;
-}
-
-.application-form-box {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-top: 6px solid var(--red);
-    padding: 34px;
-    box-shadow: var(--shadow-light);
-}
-
-.application-form-box h2 {
-    margin-bottom: 12px;
-}
-
-.application-form-box p {
-    margin-bottom: 24px;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-}
-
-.form-group {
-    margin-bottom: 18px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: 800;
-    color: var(--navy);
-    margin-bottom: 8px;
-    font-size: 14px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    border: 1px solid var(--border);
-    padding: 14px 14px;
-    font-size: 15px;
-    font-family: inherit;
-    color: var(--text);
-    background: var(--white);
-    border-radius: 2px;
-}
-
-.form-group textarea {
-    min-height: 130px;
-    resize: vertical;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--navy);
-    box-shadow: 0 0 0 3px rgba(0, 31, 91, .08);
-}
-
-.checkbox-group {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin: 18px 0 24px;
-}
-
-.checkbox-group input {
-    margin-top: 5px;
-}
-
-.checkbox-group label {
-    color: var(--text-light);
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.form-note {
-    background: var(--light);
-    border-left: 5px solid var(--navy);
-    padding: 18px;
-    margin-bottom: 22px;
-    color: var(--text);
-}
-
-.form-status {
-    display: none;
-    margin-top: 18px;
-    padding: 14px 16px;
-    background: #eef8f1;
-    border-left: 5px solid #238636;
-    color: #1f6f3a;
-    font-weight: 700;
-}
-
-.application-sidebar {
-    display: grid;
-    gap: 20px;
-}
-
-.sidebar-card {
-    background: var(--light);
-    border: 1px solid var(--border);
-    padding: 26px;
-}
-
-.sidebar-card h3 {
-    color: var(--navy);
-    margin-bottom: 12px;
-}
-
-.sidebar-card p {
-    color: var(--text-light);
-    margin-bottom: 14px;
-}
-
-.sidebar-card ul {
-    padding-left: 18px;
-    color: var(--text-light);
-}
-
-.sidebar-card li {
-    margin-bottom: 8px;
-}
-
-.application-steps {
-    counter-reset: step;
-}
-
-.application-step {
-    position: relative;
-    padding-left: 48px;
-    margin-bottom: 22px;
-}
-
-.application-step::before {
-    counter-increment: step;
-    content: counter(step);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 32px;
-    height: 32px;
-    background: var(--red);
-    color: var(--white);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-weight: 900;
-}
-
-.application-step h3 {
-    color: var(--navy);
-    margin-bottom: 6px;
-}
-
-.application-step p {
-    color: var(--text-light);
-}
-
-@media (max-width: 900px) {
-
-    .application-layout {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
-    .application-form-box {
-        padding: 24px;
-    }
-
-}
-
-</style>
+href="https://mandlalee.github.io/SamLee/apply/">
 
 </head>
 
@@ -318,7 +128,7 @@ Complete the form below with your correct details. The SamLee Estates team will 
 </p>
 
 <div class="form-note">
-<strong>Note:</strong> This form opens your email app with your application details already filled in. Review the email, then send it.
+<strong>Note:</strong> Complete the form below and submit your application. Your details will be sent directly to SamLee Estates.
 </div>
 
 <form id="applicationForm">
@@ -437,6 +247,7 @@ Complete the form below with your correct details. The SamLee Estates team will 
 
 <div class="checkbox-group">
 <input type="checkbox" id="consent" name="consent" required>
+
 <label for="consent">
 I confirm that the information I provided is correct and I allow SamLee Estates to contact me about student accommodation.
 </label>
@@ -447,7 +258,7 @@ Submit Application
 </button>
 
 <div class="form-status" id="formStatus">
-Your email app should now open with your application details. Please review and send the email.
+Application submitted successfully. SamLee Estates will contact you soon.
 </div>
 
 </form>
@@ -713,70 +524,7 @@ Student accommodation in Bloemfontein near UFS and CUT.
 </footer>
 
 <script src="../assets/js/main.js"></script>
-
-<script>
-
-const applicationForm = document.getElementById("applicationForm");
-const formStatus = document.getElementById("formStatus");
-
-const applicationEmail = "applications@samlee.co.za";
-
-if (applicationForm) {
-
-    applicationForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        const firstName = document.getElementById("firstName").value.trim();
-        const lastName = document.getElementById("lastName").value.trim();
-        const phone = document.getElementById("phone").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const institution = document.getElementById("institution").value;
-        const yearOfStudy = document.getElementById("yearOfStudy").value;
-        const funding = document.getElementById("funding").value;
-        const moveInDate = document.getElementById("moveInDate").value;
-        const roomType = document.getElementById("roomType").value;
-        const preferredArea = document.getElementById("preferredArea").value;
-        const message = document.getElementById("message").value.trim();
-
-        const subject = "Student Accommodation Application - " + firstName + " " + lastName;
-
-        const body =
-`Student Accommodation Application
-
-Full Name: ${firstName} ${lastName}
-Phone Number: ${phone}
-Email Address: ${email}
-
-Institution: ${institution}
-Year of Study: ${yearOfStudy}
-Funding Type: ${funding}
-Preferred Move-In Date: ${moveInDate || "Not provided"}
-Preferred Room Type: ${roomType || "Not provided"}
-Preferred Area: ${preferredArea || "Not provided"}
-
-Extra Details:
-${message || "No extra details provided."}
-
-Consent:
-The applicant confirmed that the information provided is correct and allowed SamLee Estates to contact them about student accommodation.`;
-
-        const mailtoLink =
-            "mailto:" + applicationEmail +
-            "?subject=" + encodeURIComponent(subject) +
-            "&body=" + encodeURIComponent(body);
-
-        window.location.href = mailtoLink;
-
-        if (formStatus) {
-            formStatus.style.display = "block";
-        }
-
-    });
-
-}
-
-</script>
+<script src="../assets/js/apply.js"></script>
 
 </body>
 
