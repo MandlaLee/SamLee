@@ -1,0 +1,373 @@
+<!-- File: sitemap.xml -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Main Pages -->
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/about/</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/apply/</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/contact/</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+
+    <!-- Accommodation Pages -->
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/accommodation/</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/accommodation/male-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/accommodation/female-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/accommodation/first-year-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/accommodation/postgraduate-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/accommodation/affordable-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+
+    <!-- University Pages -->
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/ufs/student-accommodation-near-ufs.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/cut/student-accommodation-near-cut.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+
+    <!-- Location Pages -->
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/locations/bloemfontein-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/locations/universitas-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/locations/park-west-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/locations/willows-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/locations/brandwag-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/locations/wesdene-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+
+    <!-- NSFAS Pages -->
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/accredited-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.95</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/nsfas-accommodation-near-ufs.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/nsfas-accommodation-near-cut.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/nsfas-accommodation-bloemfontein.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/how-nsfas-accommodation-works.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/nsfas-accommodation-requirements.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/nsfas-accommodation-allowance-guide-2027.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/nsfas-accommodation-application-guide.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/nsfas-funded-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/nsfas/nsfas-accommodation-faq.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+
+    <!-- Properties Pages -->
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/properties/</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/properties/facilities.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/properties/gallery.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+
+    <!-- Guide Pages -->
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/ufs-registration-guide-2027.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/cut-registration-guide-2027.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/nsfas-guide-2027.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/bloemfontein-student-survival-guide.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/budgeting-for-university-students.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/first-year-student-guide.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/moving-to-bloemfontein-for-university.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/what-to-pack-for-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/university-student-checklist.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/student-accommodation-vs-residence.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/parents-guide-to-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/how-to-choose-student-accommodation.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/student-safety-guide-bloemfontein.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/guides/university-life-in-bloemfontein.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+
+
+    <!-- FAQ Pages -->
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/faq/</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/faq/nsfas-faq.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://mandlalee.github.io/SamLee/faq/accommodation-faq.html</loc>
+        <lastmod>2026-07-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+</urlset>
