@@ -1,0 +1,785 @@
+```html
+<!-- File: apply/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Apply for Student Accommodation | SamLee Estates</title>
+
+<meta name="description"
+content="Apply for student accommodation with SamLee Estates. Submit your details for NSFAS accredited student accommodation near UFS and CUT in Bloemfontein.">
+
+<meta name="keywords"
+content="apply for student accommodation, SamLee Estates application, NSFAS accommodation application, student accommodation Bloemfontein, accommodation near UFS, accommodation near CUT">
+
+<link rel="icon" href="../assets/images/favicon.ico">
+
+<link rel="stylesheet" href="../assets/css/main.css">
+
+<link rel="canonical"
+href="https://samlee.co.za/apply/">
+
+<style>
+
+.application-layout {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr;
+    gap: 34px;
+    align-items: start;
+}
+
+.application-form-box {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 6px solid var(--red);
+    padding: 34px;
+    box-shadow: var(--shadow-light);
+}
+
+.application-form-box h2 {
+    margin-bottom: 12px;
+}
+
+.application-form-box p {
+    margin-bottom: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    padding: 14px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    color: var(--text);
+    background: var(--white);
+    border-radius: 2px;
+}
+
+.form-group textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(0, 31, 91, .08);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 18px 0 24px;
+}
+
+.checkbox-group input {
+    margin-top: 5px;
+}
+
+.checkbox-group label {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.form-note {
+    background: var(--light);
+    border-left: 5px solid var(--navy);
+    padding: 18px;
+    margin-bottom: 22px;
+    color: var(--text);
+}
+
+.form-status {
+    display: none;
+    margin-top: 18px;
+    padding: 14px 16px;
+    background: #eef8f1;
+    border-left: 5px solid #238636;
+    color: #1f6f3a;
+    font-weight: 700;
+}
+
+.application-sidebar {
+    display: grid;
+    gap: 20px;
+}
+
+.sidebar-card {
+    background: var(--light);
+    border: 1px solid var(--border);
+    padding: 26px;
+}
+
+.sidebar-card h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.sidebar-card p {
+    color: var(--text-light);
+    margin-bottom: 14px;
+}
+
+.sidebar-card ul {
+    padding-left: 18px;
+    color: var(--text-light);
+}
+
+.sidebar-card li {
+    margin-bottom: 8px;
+}
+
+.application-steps {
+    counter-reset: step;
+}
+
+.application-step {
+    position: relative;
+    padding-left: 48px;
+    margin-bottom: 22px;
+}
+
+.application-step::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+}
+
+.application-step h3 {
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.application-step p {
+    color: var(--text-light);
+}
+
+@media (max-width: 900px) {
+
+    .application-layout {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .application-form-box {
+        padding: 24px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top-bar">
+
+<div class="container">
+
+<span>Apply for Student Accommodation</span>
+
+<a href="../contact/index.html">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+<header class="header">
+
+<div class="container header-container">
+
+<a href="../index.html" class="logo">
+
+<img src="../assets/images/logo.png"
+alt="SamLee Estates">
+
+</a>
+
+<nav class="nav" id="nav">
+
+<ul>
+
+<li><a href="../index.html">Home</a></li>
+<li><a href="../accommodation/index.html">Accommodation</a></li>
+<li><a href="../nsfas/index.html">NSFAS</a></li>
+<li><a href="../ufs/student-accommodation-near-ufs.html">UFS</a></li>
+<li><a href="../cut/student-accommodation-near-cut.html">CUT</a></li>
+<li><a href="../contact/index.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<a href="index.html"
+class="apply-btn">
+
+Apply Now
+
+</a>
+
+<button class="mobile-menu-btn"
+id="mobileMenuBtn">
+
+☰
+
+</button>
+
+</div>
+
+</header>
+
+<section class="page-hero">
+
+<div class="container">
+
+<div class="breadcrumbs">
+
+<a href="../index.html">Home</a>
+
+<span> / Apply</span>
+
+</div>
+
+<h1>
+Apply for Student Accommodation
+</h1>
+
+<p>
+Submit your details to apply for SamLee Estates student accommodation near UFS and CUT in Bloemfontein.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="application-layout">
+
+<div class="application-form-box">
+
+<h2>
+Accommodation Application Form
+</h2>
+
+<p>
+Complete the form below with your correct details. The SamLee Estates team will use this information to understand your accommodation needs and contact you about availability.
+</p>
+
+<div class="form-note">
+<strong>Note:</strong> This form opens your email app with your application details already filled in. Review the email, then send it.
+</div>
+
+<form id="applicationForm">
+
+<div class="form-row">
+
+<div class="form-group">
+<label for="firstName">First Name *</label>
+<input type="text" id="firstName" name="firstName" required>
+</div>
+
+<div class="form-group">
+<label for="lastName">Last Name *</label>
+<input type="text" id="lastName" name="lastName" required>
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+<label for="phone">Phone Number *</label>
+<input type="tel" id="phone" name="phone" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email Address *</label>
+<input type="email" id="email" name="email" required>
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+<label for="institution">Institution *</label>
+<select id="institution" name="institution" required>
+<option value="">Select institution</option>
+<option value="University of the Free State">University of the Free State</option>
+<option value="Central University of Technology">Central University of Technology</option>
+<option value="Other Institution">Other Institution</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="yearOfStudy">Year of Study *</label>
+<select id="yearOfStudy" name="yearOfStudy" required>
+<option value="">Select year</option>
+<option value="First Year">First Year</option>
+<option value="Second Year">Second Year</option>
+<option value="Third Year">Third Year</option>
+<option value="Fourth Year">Fourth Year</option>
+<option value="Postgraduate">Postgraduate</option>
+<option value="Returning Student">Returning Student</option>
+</select>
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+<label for="funding">Funding Type *</label>
+<select id="funding" name="funding" required>
+<option value="">Select funding</option>
+<option value="NSFAS">NSFAS</option>
+<option value="Private / Self-funded">Private / Self-funded</option>
+<option value="Bursary">Bursary</option>
+<option value="Parent / Guardian Funded">Parent / Guardian Funded</option>
+<option value="Not Sure Yet">Not Sure Yet</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="moveInDate">Preferred Move-In Date</label>
+<input type="date" id="moveInDate" name="moveInDate">
+</div>
+
+</div>
+
+<div class="form-row">
+
+<div class="form-group">
+<label for="roomType">Preferred Room Type</label>
+<select id="roomType" name="roomType">
+<option value="">Select room type</option>
+<option value="Private Room">Private Room</option>
+<option value="Shared Room">Shared Room</option>
+<option value="Affordable Option">Affordable Option</option>
+<option value="NSFAS Accredited Option">NSFAS Accredited Option</option>
+<option value="Any Available Option">Any Available Option</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="preferredArea">Preferred Area</label>
+<select id="preferredArea" name="preferredArea">
+<option value="">Select area</option>
+<option value="Near UFS">Near UFS</option>
+<option value="Near CUT">Near CUT</option>
+<option value="Universitas">Universitas</option>
+<option value="Park West">Park West</option>
+<option value="Willows">Willows</option>
+<option value="Brandwag">Brandwag</option>
+<option value="Wesdene">Wesdene</option>
+<option value="Any Suitable Area">Any Suitable Area</option>
+</select>
+</div>
+
+</div>
+
+<div class="form-group">
+<label for="message">Extra Details</label>
+<textarea id="message" name="message" placeholder="Tell us anything important, such as your budget, campus, NSFAS status, room preference, or when you need accommodation."></textarea>
+</div>
+
+<div class="checkbox-group">
+<input type="checkbox" id="consent" name="consent" required>
+<label for="consent">
+I confirm that the information I provided is correct and I allow SamLee Estates to contact me about student accommodation.
+</label>
+</div>
+
+<button type="submit" class="btn-primary">
+Submit Application
+</button>
+
+<div class="form-status" id="formStatus">
+Your email app should now open with your application details. Please review and send the email.
+</div>
+
+</form>
+
+</div>
+
+<aside class="application-sidebar">
+
+<div class="sidebar-card">
+
+<h3>
+Before You Apply
+</h3>
+
+<p>
+Prepare the following details so your application is easier to process.
+</p>
+
+<ul>
+<li>Your full name and contact details.</li>
+<li>Your institution and campus.</li>
+<li>Your funding type.</li>
+<li>Your preferred move-in date.</li>
+<li>Your accommodation preference.</li>
+</ul>
+
+</div>
+
+<div class="sidebar-card">
+
+<h3>
+NSFAS Students
+</h3>
+
+<p>
+If you are funded by NSFAS, make sure you understand accommodation requirements and keep your important documents ready.
+</p>
+
+<a href="../nsfas/nsfas-accommodation-application-guide.html"
+class="btn-primary">
+
+NSFAS Application Guide
+
+</a>
+
+</div>
+
+<div class="sidebar-card">
+
+<h3>
+Need Help Choosing?
+</h3>
+
+<p>
+Not sure what type of accommodation you need? Read the student accommodation guide first.
+</p>
+
+<a href="../guides/how-to-choose-student-accommodation.html"
+class="btn-primary">
+
+Read Guide
+
+</a>
+
+</div>
+
+</aside>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="page-content">
+
+<h2>
+How the Application Process Works
+</h2>
+
+<div class="application-steps">
+
+<div class="application-step">
+<h3>Submit Your Details</h3>
+<p>Complete the application form with your correct student and accommodation information.</p>
+</div>
+
+<div class="application-step">
+<h3>We Review Your Needs</h3>
+<p>SamLee Estates checks your institution, funding type, preferred area and room preference.</p>
+</div>
+
+<div class="application-step">
+<h3>We Contact You</h3>
+<p>The team contacts you with available options or next steps.</p>
+</div>
+
+<div class="application-step">
+<h3>Prepare Documents</h3>
+<p>You may need to prepare your ID, proof of registration, NSFAS information or other supporting documents.</p>
+</div>
+
+<div class="application-step">
+<h3>Secure Accommodation</h3>
+<p>Once everything is confirmed, you can finalise your accommodation arrangement.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="page-content">
+
+<h2>
+Helpful Pages Before Applying
+</h2>
+
+<div class="resources-grid">
+
+<a href="../nsfas/index.html"
+class="resource-card">
+
+NSFAS Hub
+
+</a>
+
+<a href="../nsfas/accredited-student-accommodation.html"
+class="resource-card">
+
+NSFAS Accredited Accommodation
+
+</a>
+
+<a href="../ufs/student-accommodation-near-ufs.html"
+class="resource-card">
+
+Accommodation Near UFS
+
+</a>
+
+<a href="../cut/student-accommodation-near-cut.html"
+class="resource-card">
+
+Accommodation Near CUT
+
+</a>
+
+<a href="../guides/university-student-checklist.html"
+class="resource-card">
+
+University Student Checklist
+
+</a>
+
+<a href="../guides/parents-guide-to-student-accommodation.html"
+class="resource-card">
+
+Parents Guide
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Ready to Apply?
+</h2>
+
+<p>
+Submit your accommodation details and take the next step toward securing student accommodation in Bloemfontein.
+</p>
+
+<a href="#applicationForm"
+class="btn-primary">
+
+Start Form
+
+</a>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>SamLee Estates</h3>
+
+<p>
+Student accommodation in Bloemfontein near UFS and CUT.
+</p>
+
+</div>
+
+<div>
+
+<h4>Accommodation</h4>
+
+<ul>
+
+<li><a href="../accommodation/index.html">All Accommodation</a></li>
+<li><a href="../ufs/student-accommodation-near-ufs.html">Near UFS</a></li>
+<li><a href="../cut/student-accommodation-near-cut.html">Near CUT</a></li>
+<li><a href="../nsfas/accredited-student-accommodation.html">NSFAS Accredited</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>Support</h4>
+
+<ul>
+
+<li><a href="../guides/university-student-checklist.html">Student Checklist</a></li>
+<li><a href="../guides/how-to-choose-student-accommodation.html">How to Choose Accommodation</a></li>
+<li><a href="../guides/parents-guide-to-student-accommodation.html">Parents Guide</a></li>
+<li><a href="../contact/index.html">Contact Us</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+© <span class="current-year"></span> SamLee Estates. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="../assets/js/main.js"></script>
+
+<script>
+
+const applicationForm = document.getElementById("applicationForm");
+const formStatus = document.getElementById("formStatus");
+
+const applicationEmail = "applications@samlee.co.za";
+
+if (applicationForm) {
+
+    applicationForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const institution = document.getElementById("institution").value;
+        const yearOfStudy = document.getElementById("yearOfStudy").value;
+        const funding = document.getElementById("funding").value;
+        const moveInDate = document.getElementById("moveInDate").value;
+        const roomType = document.getElementById("roomType").value;
+        const preferredArea = document.getElementById("preferredArea").value;
+        const message = document.getElementById("message").value.trim();
+
+        const subject = "Student Accommodation Application - " + firstName + " " + lastName;
+
+        const body =
+`Student Accommodation Application
+
+Full Name: ${firstName} ${lastName}
+Phone Number: ${phone}
+Email Address: ${email}
+
+Institution: ${institution}
+Year of Study: ${yearOfStudy}
+Funding Type: ${funding}
+Preferred Move-In Date: ${moveInDate || "Not provided"}
+Preferred Room Type: ${roomType || "Not provided"}
+Preferred Area: ${preferredArea || "Not provided"}
+
+Extra Details:
+${message || "No extra details provided."}
+
+Consent:
+The applicant confirmed that the information provided is correct and allowed SamLee Estates to contact them about student accommodation.`;
+
+        const mailtoLink =
+            "mailto:" + applicationEmail +
+            "?subject=" + encodeURIComponent(subject) +
+            "&body=" + encodeURIComponent(body);
+
+        window.location.href = mailtoLink;
+
+        if (formStatus) {
+            formStatus.style.display = "block";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+
+</html>
+```
